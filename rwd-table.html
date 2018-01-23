@@ -1,0 +1,122 @@
+<html>
+    <head>
+        <title>Responsive Table</title>
+    </head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        table {
+            border: 0;
+            border-collapse: collapse;
+            border-spacing: 0;
+            width: 100%;
+            text-align: left;
+        }
+
+        table thead tr {
+            color: #66a0ca;
+        }
+
+        table tbody tr:nth-child(odd) {
+            background: #ddd;
+        }
+
+        table tbody tr:nth-child(even) {
+            background: #fff;
+        }
+
+        table th {
+            font-size: 18px;
+            padding: 5px 3px 5px 3px;
+            vertical-align: top;
+        }
+
+        table td {
+            font-size: 16px;
+            padding: 3px;
+        }
+
+        @media screen and (max-width: 600px) {
+            table th {
+                display: none;
+            }
+            table td:before {
+                content: attr(data-th);
+                font-weight: bold;
+                margin-right: 5px;
+                display: inline-block;
+            }
+            table td {
+                display: block;
+                padding: 5px;
+            }
+        }
+    </style>
+    <body>
+        <table>
+            <thead>
+                <tr>
+                    <th>Width</th>
+                    <th>Height</th>
+                    <th>Width Adjustment</th>
+                    <th>Door Opening Size</th>
+                    <th>Product Code (Silver)</th>
+                    <th>Product Code (White)</th>
+                    <th>Price (exc. VAT)</th>
+                    <th>Price (inc. VAT)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td data-th="Width">700</td>
+                    <td data-th="Height">1850</td>
+                    <td data-th="Width Adjustment">660 - 720</td>
+                    <td data-th="Door Opening Size">480</td>
+                    <td data-th="Product Code (Silver)">QAZ070 05</td>
+                    <td data-th="Product Code (White)">QAZ070 30</td>
+                    <td data-th="Price (exc. VAT)">£346.00</td>
+                    <td data-th="Price (inc. VAT)">£415.20</td>
+                </tr>
+                <tr>
+                    <td data-th="Width">750</td>
+                    <td data-th="Height">1850</td>
+                    <td data-th="Width Adjustment">720 - 780</td>
+                    <td data-th="Door Opening Size">540</td>
+                    <td data-th="Product Code (Silver)">QAZB075 05</td>
+                    <td data-th="Product Code (White)">QAZB075 30</td>
+                    <td data-th="Price (exc. VAT)">£361.00</td>
+                    <td data-th="Price (inc. VAT)">£433.20</td>
+                </tr>
+                <tr>
+                    <td data-th="Width">800</td>
+                    <td data-th="Height">1850</td>
+                    <td data-th="Width Adjustment">760 - 820</td>
+                    <td data-th="Door Opening Size">580</td>
+                    <td data-th="Product Code (Silver)">QAZ080 05</td>
+                    <td data-th="Product Code (White)">QAZB080 30</td>
+                    <td data-th="Price (exc. VAT)">£380.00</td>
+                    <td data-th="Price (inc. VAT)">£456.00</td>
+                </tr>
+                <tr>
+                    <td data-th="Width">900</td>
+                    <td data-th="Height">1850</td>
+                    <td data-th="Width Adjustment">840 - 900</td>
+                    <td data-th="Door Opening Size">660</td>
+                    <td data-th="Product Code (Silver)">QAZB090 05</td>
+                    <td data-th="Product Code (White)">QAZB090 30</td>
+                    <td data-th="Price (exc. VAT)">£406.00</td>
+                    <td data-th="Price (inc. VAT)">£487.20</td>
+                </tr>
+                <tr>
+                    <td data-th="Width">1000</td>
+                    <td data-th="Height">1850</td>
+                    <td data-th="Width Adjustment">940 - 1000</td>
+                    <td data-th="Door Opening Size">760</td>
+                    <td data-th="Product Code (Silver)">QAZB1000 05</td>
+                    <td data-th="Product Code (White)">QAZB1000 30</td>
+                    <td data-th="Price (exc. VAT)">£437.00</td>
+                    <td data-th="Price (inc. VAT)">£524.40</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>
