@@ -1,56 +1,56 @@
 <html>
     <head>
         <title>Responsive Table</title>
-    </head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-        table {
-            border: 0;
-            border-collapse: collapse;
-            border-spacing: 0;
-            width: 100%;
-            text-align: left;
-        }
-
-        table thead tr {
-            color: #66a0ca;
-        }
-
-        table tbody tr:nth-child(odd) {
-            background: #ddd;
-        }
-
-        table tbody tr:nth-child(even) {
-            background: #fff;
-        }
-
-        table th {
-            font-size: 18px;
-            padding: 5px 3px 5px 3px;
-            vertical-align: top;
-        }
-
-        table td {
-            font-size: 16px;
-            padding: 3px;
-        }
-
-        @media screen and (max-width: 600px) {
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            table {
+                border: 0;
+                border-collapse: collapse;
+                border-spacing: 0;
+                width: 100%;
+                text-align: left;
+            }
+    
+            table thead tr {
+                color: #66a0ca;
+            }
+    
+            table tbody tr:nth-child(odd) {
+                background: #ddd;
+            }
+    
+            table tbody tr:nth-child(even) {
+                background: #fff;
+            }
+    
             table th {
-                display: none;
+                font-size: 18px;
+                padding: 5px 3px 5px 3px;
+                vertical-align: top;
             }
-            table td:before {
-                content: attr(data-th);
-                font-weight: bold;
-                margin-right: 5px;
-                display: inline-block;
-            }
+    
             table td {
-                display: block;
-                padding: 5px;
+                font-size: 16px;
+                padding: 3px;
             }
-        }
-    </style>
+    
+            @media screen and (max-width: 600px) {
+                table th {
+                    display: none;
+                }
+                table td:before {
+                    content: attr(data-th);
+                    font-weight: bold;
+                    margin-right: 5px;
+                    display: inline-block;
+                }
+                table td {
+                    display: block;
+                    padding: 5px;
+                }
+            }
+        </style>
+    </head>
     <body>
         <table>
             <thead>
