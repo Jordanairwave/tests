@@ -1,3 +1,6 @@
+/*--------------------------------------------------
+    General Styling
+---------------------------------------------------*/
 article {
     display: flex;
     flex-direction: row;
@@ -35,7 +38,9 @@ section svg {
     height: 100%;
 }
 
-/* Form Styling */
+/*--------------------------------------------------
+    Form Styling
+---------------------------------------------------*/
 form {
     position: relative;
     display: block;
@@ -79,3 +84,79 @@ form input[type=submit] {
 form input[type=submit]:hover {
     background-color: rgb(235, 235, 235); 
 }
+
+/*--------------------------------------------------
+    Map Styling
+---------------------------------------------------*/
+/* Scotland SVG ID's */
+#path2470
+#path3273
+#path3265
+#path3259
+#path3261
+#path3251
+#path3253
+#path3255
+#path3257
+#path3263
+#path3267
+#path3269
+#path3271
+#path3275
+#path3277
+#path3279
+#path3281
+#path3283
+#path3285
+#path3287
+#path3289
+#path3291
+#path3293
+#path3295
+#path3297
+#path3299
+#path3301
+#path3303
+
+/* East Midlands */
+#path96
+
+/* London */
+#path152
+
+/* South West */
+#path164
+
+/* Northen Irland */
+#path6609
+
+/* Isle of Man */
+#path2727
+
+/* Channel Islands */
+#path3499
+#path3501
+#path3503
+#path3505
+#path3507
+
+/* Yorkshire and the Humber */
+#path36
+
+/* North East */
+#path20
+
+/* North West */
+#path24
+
+/* West Midlands */
+#path80
+
+/* South East */
+#path132
+
+/* East of England */
+#path84
+
+/* Wales */
+#path6137
