@@ -92,8 +92,10 @@ form input[type=submit]:hover {
     Light blue: rgb(84, 127, 180)
     Dark Blue:  rgb(65, 89, 104)
 */
- 
-/* Scotland SVG ID's */
+
+/* Map Region ID's in SVG 
+
+Scotland SVG ID's
 #path2470
 #path3273
 #path3265
@@ -123,45 +125,55 @@ form input[type=submit]:hover {
 #path3301
 #path3303
 
-/* East Midlands */
+East Midlands
 #path96
 
-/* London */
+London
 #path152
 
-/* South West */
+South West
 #path164
 
-/* Northen Irland */
+Northen Irland
 #path6609
 
-/* Isle of Man */
+Isle of Man
 #path2727
 
-/* Channel Islands */
+Channel Islands
 #path3499
 #path3501
 #path3503
 #path3505
 #path3507
 
-/* Yorkshire and the Humber */
+Yorkshire and the Humber
 #path36
 
-/* North East */
+North East
 #path20
 
-/* North West */
+North West
 #path24
 
-/* West Midlands */
+West Midlands
 #path80
 
-/* South East */
+South East
 #path132
 
-/* East of England */
+East of England
 #path84
 
-/* Wales */
+Wales
 #path6137
+
+*/
+
+#svg2 .region {
+    fill: rgb(84, 127, 180);
+}
+
+#svg2 .region.hover {
+    fill: rgb(65, 89, 104);
+}
