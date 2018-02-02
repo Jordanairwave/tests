@@ -1,4 +1,6 @@
 var site = {
+    regionID: null,
+    regionName: null,
 	init: function() {
 
         //Map mouse enter functionality
@@ -13,6 +15,15 @@ var site = {
 
             //remove class hover to current region
             $(this).attr("class", "region");
+        });
+
+        //Map region click function
+        $('#svg2 .region').on('click', function() {
+
+            //Get ID of region
+            site.regionID = $(this).attr('id');
+
+            console.log(site.regionID);
         });
 
 

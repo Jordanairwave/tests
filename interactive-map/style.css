@@ -171,9 +171,10 @@ Wales
 */
 
 #svg2 .region {
-    `fill: rgb(84, 127, 180);`
+    fill: rgb(84, 127, 180);
+    cursor: pointer;
 }
 
 #svg2 .region.hover {
-    `fill: rgb(65, 89, 104);`
+    fill: rgb(65, 89, 104);
 }
