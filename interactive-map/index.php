@@ -22,7 +22,14 @@
                         <input type="submit" value="Enter" />
                     </fieldset>
                 </form>
-
+                <section class="sales-rep-information">
+                    <ul>
+                        <li>Name: <span class="first-name"></span> <span class="last-name"></span></li>
+                        <li>Email: <span class="email"></span></li>
+                        <li>Mobile Number: <span class="mobile-number"></span></li>
+                        <li><span class="profile-pic"></span></li>
+                    </ul>
+                </section>
             </aside>
             <section>
                 <?php echo file_get_contents("uk-regions-test.svg"); ?>
