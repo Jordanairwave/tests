@@ -27,7 +27,7 @@
                         <li>Name: <span class="first-name"></span> <span class="last-name"></span></li>
                         <li>Email: <span class="email"></span></li>
                         <li>Mobile Number: <span class="mobile-number"></span></li>
-                        <li><span class="profile-pic"></span></li>
+                        <li><img src="" alt="Profile Picture" /></li>
                     </ul>
                 </section>
             </aside>

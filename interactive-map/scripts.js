@@ -117,7 +117,7 @@ var site = {
                     $('.sales-rep-information ul li span.last-name').text(result.lastName);
                     $('.sales-rep-information ul li span.email').text(result.email);
                     $('.sales-rep-information ul li span.mobile-number').text(result.mobileNumber);
-                    $('.sales-rep-information ul li span.profile-pic').text(result.pic);
+                    $('.sales-rep-information ul li img').attr('src', 'http://' + window.location.hostname + '/interactive-map/images/' + result.pic);
                     $('.sales-rep-information').show();
 
                 },
@@ -147,7 +147,7 @@ var site = {
                     $('.sales-rep-information ul li span.last-name').text(result.lastName);
                     $('.sales-rep-information ul li span.email').text(result.email);
                     $('.sales-rep-information ul li span.mobile-number').text(result.mobileNumber);
-                    $('.sales-rep-information ul li span.profile-pic').text(result.pic);
+                    $('.sales-rep-information ul li img').attr('src', 'http://' + window.location.hostname + '/interactive-map/images/' + result.pic);
                     $('.sales-rep-information').show();
 
                     //Remove Class clicked from other regions
