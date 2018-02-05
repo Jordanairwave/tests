@@ -36,15 +36,19 @@ if( !empty($_POST)) {
         //Execute Query
         $STH->execute();
 
+        $result = array();
+
         //Out Put Results
         while($row = $STH->fetch()) {
-            echo $row['first_name'] . "\n";
-            echo $row['last_name'] . "\n";
-            echo $row['mobile_number'] . "\n";
-            echo $row['region'] . "\n";
-            echo $row['email'] . "\n";
-            echo $row['profile_pic'] . "\n";
+            $result['firstName'] = $row['first_name'];
+            $result['lastName'] = $row['last_name'];
+            $result['mobileNumber'] = $row['mobile_number'];
+            $result['region'] = $row['region'];
+            $result['email'] = $row['email'];
+            $result['pic'] = $row['profile_pic'];
         }
+
+        echo json_encode( $result );
 
         # close the connection
         $DBH = null;

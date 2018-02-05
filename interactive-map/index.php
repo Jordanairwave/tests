@@ -22,6 +22,7 @@
                         <input type="submit" value="Enter" />
                     </fieldset>
                 </form>
+
             </aside>
             <section>
                 <?php echo file_get_contents("uk-regions-test.svg"); ?>

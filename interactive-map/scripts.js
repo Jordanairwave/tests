@@ -105,15 +105,21 @@ var site = {
                     break;
             }
 
-            console.log(site.regionName);
-
 
             //Ajax request to for database script
-            // $.ajax({
-            //     type: 'POST',
-            //     url: 'find-sales-guy.php',
-            //     data: 'region='+ ,
-            // });
+            $.ajax({
+                url: 'find-sales-guy.php',
+                type: 'POST',
+                data: {region: site.regionName},
+                success: function(data){
+                    var result = jQuery.parseJSON(data);
+                    console.log(result.firstName);
+                },
+                error: function(textStatus, errorThrown){
+                    console.log(textStatus);
+                    console.log(errorThrown);
+                }
+            });
 
 
         });
