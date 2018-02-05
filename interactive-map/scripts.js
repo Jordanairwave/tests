@@ -150,6 +150,49 @@ var site = {
                     $('.sales-rep-information ul li span.profile-pic').text(result.pic);
                     $('.sales-rep-information').show();
 
+                    //Remove Class clicked from other regions
+                    $('.region.clicked').removeClass('clicked');
+
+                    //add clicked class to region on map
+                    switch(result.region) {
+                        case 'Scotland':
+                            $('#path2470, #path3273, #path3265, #path3259, #path3261 ,#path3251, #path3253, #path3255 ,#path3257, #path3263 ,#path3267 ,#path3269, #path3271 ,#path3275, #path3277, #path3279, #path3281, #path3283, #path3285, #path3287, #path3289, #path3291, #path3293, #path3295, #path3297, #path3299, #path3301, #path3303').addClass('clicked');
+                            break;
+                        case 'East Midlands':
+                            $('#path96').addClass('clicked');
+                            break;
+                        case 'London':
+                            $('#path152').addClass('clicked');
+                            break;
+                        case 'South West':
+                            $('#path164').addClass('clicked');
+                            break;
+                        case 'Northen Ireland':
+                            $('#path6609').addClass('clicked');
+                            break;
+                        case 'Yorkshire and the Humber':
+                            $('#path36').addClass('clicked');
+                            break;
+                        case 'North East':
+                            $('#path20').addClass('clicked');
+                            break;
+                        case 'North West':
+                            $('#path24').addClass('clicked');
+                            break;
+                        case 'West Midlands':
+                            $('#path80').addClass('clicked');
+                            break;
+                        case 'South East':
+                            $('#path132').addClass('clicked');
+                            break;
+                        case 'East of England':
+                            $('#path84').addClass('clicked');
+                            break;
+                        case 'Wales':
+                            $('#path6137').addClass(clicked);
+                            break;
+                    }
+
                 },
                 error: function(textStatus, errorThrown){
                     console.log(textStatus);
