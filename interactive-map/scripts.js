@@ -7,14 +7,14 @@ var site = {
         $('#svg2 .region').on('mouseenter', function() {
 
             //Add class hover to current region
-            $(this).attr("class", "region hover");
+            $(this).addClass('hover');
         });
 
         //Map mouse leave functionality
         $('#svg2 .region').on('mouseleave', function() {
 
             //remove class hover to current region
-            $(this).attr("class", "region");
+            $(this).removeClass('hover');
         });
 
         //Map region click function
@@ -23,7 +23,13 @@ var site = {
             //Get ID of region
             site.regionID = $(this).attr('id');
 
-            console.log(site.regionID);
+            //Remove Class clicked from other regions
+            $('.region.clicked').removeClass('clicked');
+
+            //Add class clicked to this region
+            $(this).addClass('clicked');
+
+            
         });
 
 

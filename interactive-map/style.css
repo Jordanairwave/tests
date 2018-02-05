@@ -175,6 +175,7 @@ Wales
     cursor: pointer;
 }
 
-#svg2 .region.hover {
+#svg2 .region.hover,
+#svg2 .region.clicked {
     fill: rgb(65, 89, 104);
 }
