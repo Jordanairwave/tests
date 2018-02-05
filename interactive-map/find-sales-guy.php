@@ -4,11 +4,8 @@
 */
 
 if( !empty($_POST)) {
-    //Database Details - These would go in a seperate file
-    $host = '127.0.0.1';
-    $dbname = 'interactive-map';
-    $user = 'root';
-    $pass = 'root';
+    //Database Details
+    include 'db.php';
 
 
     //PDO Try statement
