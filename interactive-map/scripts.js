@@ -113,7 +113,13 @@ var site = {
                 data: {region: site.regionName},
                 success: function(data){
                     var result = jQuery.parseJSON(data);
-                    console.log(result.firstName);
+                    $('.sales-rep-information ul li span.first-name').text(result.firstName);
+                    $('.sales-rep-information ul li span.last-name').text(result.lastName);
+                    $('.sales-rep-information ul li span.email').text(result.email);
+                    $('.sales-rep-information ul li span.mobile-number').text(result.mobileNumber);
+                    $('.sales-rep-information ul li span.profile-pic').text(result.pic);
+                    $('.sales-rep-information').show();
+
                 },
                 error: function(textStatus, errorThrown){
                     console.log(textStatus);
