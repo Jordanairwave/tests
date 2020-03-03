@@ -1,0 +1,45 @@
+#sales-representative-section .content-wrapper-2-cols {
+    padding: 40px 30px 40px 30px;
+    border-radius: 5px;
+    background-color: #fff;
+    width: 100%;
+    max-width: 600px;
+    box-sizing: border-box;
+}
+
+#sales-representative-section form {
+    display: block;
+    border: 1px solid #C0C0C0;
+    border-radius: 4px;
+}
+
+#sales-representative-section form label {
+    display: block;
+}
+
+#sales-representative-section form input[type="text"] {
+    border: 1px solid #C0C0C0;
+    border-radius: 4px;
+    width: 100%;
+    font-size: 12px !important;
+    padding: 4px 10px !important;
+}
+
+#sales-representative-section form fieldset {
+    margin: 0 0 10px 0;
+    border: none;
+}
+
+#sales-representative-section .my-info-1 div {
+    padding-top: 20px;
+}
+
+#sales-representative-section .my-info-1 div.hide {
+    display: none;
+}
+
+@media screen and (max-width: 991px) {
+    #sales-representative-section .content-wrapper {
+        max-width: 100%;
+    }
+}
