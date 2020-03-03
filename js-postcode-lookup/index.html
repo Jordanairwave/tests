@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <title>JS Poscode lookup in array test</title>
+    </head>
+    <body>
+        <article>
+            <section id="sales-representative-section">
+                <h2>Find a Sales Representative</h2>
+                <div class="content-wrapper-2-cols">
+                    <div class="col">
+                        <form id="sales-representative-lookup-form" action="#">
+                            <fieldset>
+                                <label for="postcode">Please enter your postcode</label>
+                                <input type="text" name="postcode" required="required" />
+                            </fieldset>
+                            <fieldset>
+                                <button type="submit" class="btn btn-default">Submit <i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+                            </fieldset>
+                        </form>
+                    </div>
+                    <div class="col">
+                        <div class="sales-representative">
+                            <div class="form-group row">
+                                <div id="boxes" class="my-info-1">
+                                    <div class="north hide">
+                                        <p><strong>Tom Bates</strong></p>
+                                        <p><a href="tel:+44121232123"><i class="fa fa-phone" aria-hidden="true"></i> 12123 2123</a></p>
+                                        <p><a href="mailto:tom.bates@company.co.uk"><i class="fa fa-envelope-o" aria-hidden="true"></i> tom.bates@company.co.uk</a>
+                                    </div>
+                                    <div class="midlands hide">
+                                        <p><strong>David Robins</strong></p>
+                                        <p><a href="tel:+441234567890"><i class="fa fa-phone" aria-hidden="true"></i> 01234567890</a></p>
+                                        <p><a href="mailto:david.robins@company.co.uk"><i class="fa fa-envelope-o" aria-hidden="true"></i> david.robins@company.co.uk</a></p>
+                                    </div>
+                                    <div class="southEast hide">
+                                        <p><strong>John Mourt</strong></p>
+                                        <p><a href="tel:+449876565454"><i class="fa fa-phone" aria-hidden="true"></i> 09876565454</a></p>
+                                        <p><a href="mailto:john.mourt@company.co.uk"><i class="fa fa-envelope-o" aria-hidden="true"></i> john.court@company.co.uk</a></p>										
+                                    </div>
+                                    <div class="southWest hide">
+                                        <p><strong>Tom Suns</strong></p>
+                                        <p><a href="tel:+4499887766554"><i class="fa fa-phone" aria-hidden="true"></i> 099887766554</a></p>
+                                        <p><a href="mailto:tom.suns@company.co.uk"><i class="fa fa-envelope-o" aria-hidden="true"></i> tom.suns@company.co.uk</a></p>
+                                    </div>
+                                    <div class="error hide">
+                                        <p><strong>No details found for this postcode, Please try again.</strong></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </article>
+    </body>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</html>
